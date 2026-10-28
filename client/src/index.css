@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lilita One", system-ui, sans-serif;
+  --color-wood: #c68642;
+  --color-wood-dark: #3b2412;
+  --color-gold: #ffd23f;
+  --color-parchment: #fff1c9;
+}
+
+html,
+body,
+#root {
+  height: 100dvh;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+html {
+  font-synthesis: none;
+  /* tránh trình duyệt tự làm đậm giả */
+}
+
+body {
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bg-intro {
+  background: linear-gradient(to bottom, #5bb7f0 0%, #bfe7ff 45%, #9a6330 45%, #3d2412 100%);
+}
